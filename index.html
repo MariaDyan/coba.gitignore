@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aplikasi Absen</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/daisyui"></script>
+</head>
+<body class="bg-blue-50 flex items-center justify-center h-screen">
+    <div class="card w-80 bg-white shadow-lg p-5 rounded-lg">
+        <h2 class="text-xl font-bold text-center text-gray-700 mb-6">Login Aplikasi Absen</h2>
+        <form action="dashboard_absen.php" method="POST">
+            <div class="form-control mb-4">
+                <label class="label" for="username">
+                    <span class="label-text">Username</span>
+                </label>
+                <input type="text" id="username" name="username" class="input input-bordered w-full" required>
+            </div>
+            <div class="form-control mb-6">
+                <label class="label" for="password">
+                    <span class="label-text">Password</span>
+                </label>
+                <input type="password" id="password" name="password" class="input input-bordered w-full" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-full">Login</button>
+        </form>
+        <p class="text-sm text-center text-gray-500 mt-4">
+            Hubungi admin jika lupa username atau password.
+        </p>
+    </div>
+</body>
+</html>
